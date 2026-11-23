@@ -8,7 +8,7 @@ const globalConst = "I'm a global constant";
 //    var blockVar = "I'm a block-scoped var";
 //    let blockLet = "I'm a block-scoped let";
 //    const blockConst = " I'm a block-scoped const";
-}
+//}
 // Global
 console.log(globalVar);
 console.log(globalLet);
@@ -24,9 +24,13 @@ function show(){
     var functionVar = "I'm a block-scoped var";
     let functionLet = "I'm a block-scoped let";
     const functionConst = "I'm a block-scoped const";
+    functionLet = "Sou um reassign";
+    console.log(functionLet);
+    console.log(functionLet);
 }
-
 show();
+
+functionVar = "It's NOT A REASSIGN, it's a NEW ASSIGN!";
 
 console.log(functionVar);
 console.log(functionLet);
