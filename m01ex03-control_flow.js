@@ -44,3 +44,30 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+let isAuthenticated = true;
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+console.log("Authentication Status:", authenticationStatus);
+
+// Practice Task
+
+let isEmployee = true;
+let memberCategory = "Subscriber";
+if (isEmployee === true) {
+    console.log("You have Employee's access!");
+    
+    switch (memberCategory) {
+        case "Member":
+            console.log("You have full access to Dietary Services!")
+            break;
+        case "Subscriber":
+            console.log("You have partial access to Dietary Services!")
+            break;
+        default:
+            console.log("You need to enroll to Dietary Services!")
+    }
+} else {
+    console.log("You don't have access!")
+}
